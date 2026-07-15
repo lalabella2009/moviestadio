@@ -682,6 +682,43 @@
   }
   .faq-a a { color: var(--rose); text-decoration: underline; }
 
+  /* ---------- Blog / Column ---------- */
+  .blog { background: var(--ivory); }
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .blog-card {
+    background: var(--ivory-deep);
+    border-radius: 6px;
+    padding: 30px 32px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+  }
+  .blog-card:hover { transform: translateY(-4px); }
+  .blog-card .blog-tag {
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+  .blog-card h3 {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--forest);
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  .blog-card p {
+    font-size: 0.85rem;
+    color: var(--forest-soft);
+  }
+  @media (max-width: 640px) {
+    .blog-grid { grid-template-columns: 1fr; }
+  }
+
   /* ---------- CTA footer ---------- */
   .cta-final {
     background: var(--forest);
@@ -742,7 +779,8 @@
     <div class="header-nav">
       <a href="#pricing" class="nav-link">料金</a>
       <a href="#flow" class="nav-link">流れ</a>
-      <a href="#contact" class="header-cta">LINEで相談</a>
+      <a href="#blog" class="nav-link">コラム</a>
+      <a href="https://lin.ee/v2G76dA" class="header-cta" target="_blank" rel="noopener">LINEで相談</a>
     </div>
   </div>
 </header>
@@ -762,7 +800,7 @@
     <h1>大切な二人の物語を、<br><em>やさしく</em>つなぐ一本に。</h1>
     <p>写真と想いをLINEで送るだけ。10年の経験を持つ少人数チームが、心に残る余興ムービーに仕立てます。</p>
     <div class="hero-ctas">
-      <a href="#contact" class="btn-primary">LINEで無料相談する</a>
+      <a href="https://lin.ee/v2G76dA" class="btn-primary" target="_blank" rel="noopener">LINEで無料相談する</a>
       <a href="#flow" class="btn-ghost">ご依頼の流れを見る</a>
     </div>
   </div>
@@ -854,7 +892,7 @@
           <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="#C98B93" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>標準BGM使用</li>
           <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4" stroke="#C98B93" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>修正1回まで無料</li>
         </ul>
-        <a href="#contact" class="plan-cta">LINEで相談する</a>
+        <a href="https://lin.ee/v2G76dA" class="plan-cta" target="_blank" rel="noopener">LINEで相談する</a>
       </div>
       <div>
         <div class="options-head">
@@ -910,7 +948,7 @@
             <div class="calc-label">合計金額(目安)</div>
             <div class="calc-amount"><span id="calcTotal">15,000</span><span class="unit2">円(税込)〜</span></div>
           </div>
-          <a href="#contact" class="plan-cta">この内容でLINE相談する</a>
+          <a href="https://lin.ee/v2G76dA" class="plan-cta" target="_blank" rel="noopener">この内容でLINE相談する</a>
         </div>
         <div class="pricing-note">
           料金は目安です。内容や納期によって前後する場合があるため、まずはLINEにて写真・動画の分量や希望納期をお聞かせください。お見積もりのみのご相談も歓迎です。<br>
@@ -944,6 +982,23 @@
         <div class="faq-q">Q. 支払い方法を教えてください。</div>
         <div class="faq-a">銀行振込にて承っております。詳細はLINEでのご相談時にご案内いたします。</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="blog" id="blog">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-eyebrow">COLUMN</div>
+      <h2>ブライダルコラム</h2>
+      <p>結婚式の準備に役立つ情報を発信しています。</p>
+    </div>
+    <div class="blog-grid">
+      <a href="blog-2026-wedding-trend.html" class="blog-card">
+        <div class="blog-tag">WEDDING COLUMN</div>
+        <h3>2026年の結婚式トレンド4選<br>―ゲストと過ごす時間を大切にする時代へ</h3>
+        <p>披露宴からウエディングパーティへ、ゲスト参加型演出など、2026年最新の結婚式トレンドをご紹介します。</p>
+      </a>
     </div>
   </div>
 </section>
@@ -1008,7 +1063,7 @@
 </section>
 
 <footer>
-  © MovieStadio — 心をつなぐ余興ムービー　|　<a href="terms.html" style="color: rgba(251,247,241,0.6);">利用規約</a>　|　<a href="copyright-guide.html" style="color: rgba(251,247,241,0.6);">著作権について</a>
+  © MovieStadio — 心をつなぐ余興ムービー　|　<a href="terms.html" style="color: rgba(251,247,241,0.6);">利用規約</a>　|　<a href="copyright-guide.html" style="color: rgba(251,247,241,0.6);">著作権について</a>　|　<a href="blog-2026-wedding-trend.html" style="color: rgba(251,247,241,0.6);">コラム</a>
 </footer>
 
 <script>
