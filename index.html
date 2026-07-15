@@ -655,6 +655,33 @@
     color: var(--forest-soft);
   }
 
+  /* ---------- FAQ ---------- */
+  .faq { background: var(--ivory-deep); }
+  .faq-list {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .faq-item {
+    background: var(--ivory);
+    border-radius: 6px;
+    padding: 26px 30px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow);
+  }
+  .faq-q {
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 600;
+    font-size: 1.02rem;
+    color: var(--forest);
+    margin-bottom: 12px;
+  }
+  .faq-a {
+    font-size: 0.9rem;
+    color: var(--forest-soft);
+    line-height: 1.9;
+  }
+  .faq-a a { color: var(--rose); text-decoration: underline; }
+
   /* ---------- CTA footer ---------- */
   .cta-final {
     background: var(--forest);
@@ -870,10 +897,6 @@
             <span class="option-price">+3,000円</span>
           </li>
           <li class="option-row">
-            <label class="option-name"><input type="checkbox" class="opt-checkbox" data-price="15000">著作権申請(JASRAC)</label>
-            <span class="option-price">+15,000円</span>
-          </li>
-          <li class="option-row">
             <label class="option-name"><input type="checkbox" class="opt-checkbox" data-price="1000">DVD納品</label>
             <span class="option-price">+1,000円</span>
           </li>
@@ -890,8 +913,36 @@
           <a href="#contact" class="plan-cta">この内容でLINE相談する</a>
         </div>
         <div class="pricing-note">
-          料金は目安です。内容や納期によって前後する場合があるため、まずはLINEにて写真・動画の分量や希望納期をお聞かせください。お見積もりのみのご相談も歓迎です。
+          料金は目安です。内容や納期によって前後する場合があるため、まずはLINEにて写真・動画の分量や希望納期をお聞かせください。お見積もりのみのご相談も歓迎です。<br>
+          使用楽曲は著作権フリー音源(royalty-free)のみとなります。市販曲(CD音源・配信音源等)のご使用をご希望の場合は、お客様ご自身での著作権手続きが必要です。詳しくは<a href="copyright-guide.html" style="color: var(--rose); text-decoration: underline;">音楽著作権についてのご案内</a>をご覧ください。
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-eyebrow">FAQ</div>
+      <h2>よくある質問</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Q. 市販の曲(CD音源・配信音源)を使ってもらえますか?</div>
+        <div class="faq-a">当店で標準的にご用意しているのは著作権フリー音源(royalty-free)のみです。市販曲のご使用をご希望の場合は、お客様ご自身でJASRAC等への手続きが必要になります。詳しくは<a href="copyright-guide.html">音楽著作権についてのご案内</a>をご覧ください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q. 納期はどれくらいかかりますか?</div>
+        <div class="faq-a">標準で1〜2週間程度を目安にしております。お急ぎの場合は特急仕上げオプション(3日以内納品)もご用意しておりますので、まずはLINEにてご相談ください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q. 修正は何回までお願いできますか?</div>
+        <div class="faq-a">ベースプランに修正1回まで含まれております。2回目以降はオプションにて承ります。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q. 支払い方法を教えてください。</div>
+        <div class="faq-a">銀行振込にて承っております。詳細はLINEでのご相談時にご案内いたします。</div>
       </div>
     </div>
   </div>
@@ -957,7 +1008,7 @@
 </section>
 
 <footer>
-  © MovieStadio — 心をつなぐ余興ムービー　|　<a href="terms.html" style="color: rgba(251,247,241,0.6);">利用規約</a>
+  © MovieStadio — 心をつなぐ余興ムービー　|　<a href="terms.html" style="color: rgba(251,247,241,0.6);">利用規約</a>　|　<a href="copyright-guide.html" style="color: rgba(251,247,241,0.6);">著作権について</a>
 </footer>
 
 <script>
