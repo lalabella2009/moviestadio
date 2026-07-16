@@ -375,6 +375,8 @@
     aspect-ratio: 3/4;
     background: linear-gradient(150deg, var(--rose-soft), var(--sage));
     position: relative;
+    background-size: cover;
+    background-position: center;
   }
   .work-thumb::after {
     content: '準備中';
@@ -387,6 +389,36 @@
     font-size: 0.8rem;
     letter-spacing: 0.2em;
     font-family: 'Shippori Mincho', serif;
+  }
+  .work-thumb.filled::after { content: none; }
+  .work-thumb.filled {
+    background-color: var(--forest);
+  }
+  .work-play-icon {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: rgba(46,59,44,0.25);
+  }
+  .work-card:hover .work-play-icon { opacity: 1; }
+  .work-play-icon .circle {
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    background: rgba(251,247,241,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .work-play-icon .circle svg { margin-left: 3px; }
+  .work-desc {
+    font-size: 0.8rem;
+    color: var(--forest-soft);
+    margin-top: 8px;
+    line-height: 1.7;
   }
   .work-info { padding: 20px 22px 26px; }
   .work-info .tag { font-size: 0.7rem; color: var(--gold); letter-spacing: 0.15em; margin-bottom: 6px; }
@@ -1225,6 +1257,25 @@
       <h2>制作事例</h2>
       <p>これまで手がけたムービーの一部を、近日公開予定です。</p>
     </div>
+    <!--
+      ▼ 制作事例を追加する時は、下の「準備中」カードを
+      このテンプレートに差し替えてください(コピペ用)
+
+      <a href="動画のURL(YouTube限定公開URL等)" class="work-card" target="_blank" rel="noopener">
+        <div class="work-thumb filled" style="background-image:url('サムネイル画像のURL');">
+          <div class="work-play-icon">
+            <div class="circle">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 4L16 10L6 16V4Z" fill="#2E3B2C"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="work-info">
+          <div class="tag">カテゴリ名(例: MESSAGE MOVIE)</div>
+          <h4>タイトル</h4>
+          <p class="work-desc">1〜2行程度の簡単な説明文</p>
+        </div>
+      </a>
+    -->
     <div class="works-grid">
       <div class="work-card">
         <div class="work-thumb"></div>
@@ -1338,5 +1389,6 @@
   recalc();
 })();
 </script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "868349dbf77044d69d6995701b7b043b"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
